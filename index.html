@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 0 Day 2</title>
+    <meta author="Matthew LaGreca">
+    <meta name="description" content="Portfolio">
+    <link rel="stylesheet" href="./styles/main.css">
+</head>
+<!-- Shortcut: Using Ctrl + / will automatically comment out a line, 
+    no matter the language in VSCode-->
+
+<!-- navbar -->
+    <header>
+        <nav>
+            <ul>
+                <!-- relative vs absoulute urls
+                    relative: within our project href= -->
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#bio">About</a></li>
+                <li><a href="#footer">Contact Me</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="hero">
+            <h1>Matthew LaGreca</h1>
+            <h2>Software Engineer in training</h2>
+        </section>
+        <section id="bio">
+            <div>
+                <h2><u>Get to know me!</u></h2>
+                <p><img id = "headshot" src="./images/headshot.jpg" alt="Headshot.jpg">
+                    I graduated from the <em>University of Illinois Urbana Champaign</em> in May 2018 with a Bachelor's of Science in <strong>Electrical Engineering</strong>. 
+                    My first job was as a contractor for company called <em>Rauland</em>, performing work as a <strong>Parts Engineer</strong>.  When my contract ended, I started 
+                    as a full time employee at <em>Yaskawa America Inc.</em>, working in the Drive's division as a <strong>Technical Support Engineer</strong>, where I worked for 4 years. <br><br>
+                    While these were both fine opportunities for employment, I ultimately decided to pursue a career in <strong>Software Engineering</strong> as the work and lifestyle better suit me. <br><br>
+                    I'm looking forward to working hard for you and bringing much value to your establishment!
+                </p>
+            </div>
+            <div>
+                <details> <!--open makes it so the default is open-->
+                    <summary><b>My job</b></summary>
+                    <p>While not currenly employed, my current job is a <b>Full Time 
+                        student</b> at <b>Coding Temple's Software Engineering Bootcamp!</b></p>
+                </details>
+                <details>
+                    <summary><b>Hobbies</b></summary>
+                    <p>What can I say?  In my personal life I am quite the goof ball! <br>
+                        Here's just a brief list of my hobbies and interests <br><br>
+                        <ul>
+                            <li><b>Improv comedy</b></li><br>
+                            <li><b>Video Games; some of my favorites are:</b> <ul>
+                                <li>Fire Emblem</li>
+                                <li>No More Heroes</li>
+                                <li>Tales Of Symphonia</li>
+                            </ul></li>
+                            <br>
+                            <li><b>Staying in shape with:</b> <ul>
+                                <li>Dance Dance Revolution</li>
+                                <li>Yoga</li>
+                                <li>Lifting Weights</li>
+                            </ul></li>
+                        </ul></p>
+                </details>
+                <details>
+                    <summary><b>My passions</b></summary>
+                    <p>
+                        Whenever someone asks me what my favorite video game is, I usually never say
+                        "<b>DDR</b>", but that's because it's <b>SO</b> much more to me than just a game.  Not only is
+                        it amazing and <i>fun</i> cardio, but the competitive aspect of the game has produced
+                        many of my best friendships and going to tournaments is like a family reunion. <br>
+                        I'm so glad that I decided to start playing close to 20 years ago, continued to keep
+                        after my local scene died out, and joined the national scene 10 years ago; I couldn't 
+                        imagine my life without this game and the wonderful people I've met along the way.
+                        I used to be one of the best players in the world and I'm slowly coming out of retirement; I hope
+                        to be a top level player again one day.<br>
+                        <br>
+                        Beyond DDR, at the beginning of this year I decided to start pursuing a dream of mine that I've 
+                        had for a while now: comedy.  It started with taking improv classes at <b><i>The Annoyance</i></b>
+                        in Chicago, but I also started taking an acting class as well.  While pursuing those dreams of 
+                        stardom have been put on hold for this bootcamp, I am in anticipation of when I can start again; 
+                        I desire to be on the big screen one day and I would at the very least like to move closer to the city.
+                    </p>
+                </details>
+                <iframe id="MAXX" width="560" height="315" 
+                src="https://www.youtube.com/embed/4lKrNvYwsbw?si=vhLp1DtrrIp2tD2x" 
+                title="YouTube video player" frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+                gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <caption id = "Unlimited"><br>
+                    Just one of the many DDR scores I'm proud of on one of the hardest
+                    songs in the game
+                </caption>
+            </div>
+        </section>
+        <section id="blog">
+            <h2><u>Read my blog!</u></h2><br>
+            <article>
+                <h3>My journey to coding</h3>
+                <p>I've taken quite a few coding classes in Java, C, 
+                    C++, SystemVerilog and some pseudo assembly code.  
+                    While Python, JavaScript and TypeScript will all 
+                    be new to me and I'm not the best coder I'm super 
+                    excited to become a monster</p>
+            </article>
+            <br>
+            <article>
+                <h3>Recent happenings in my life</h3>
+                <p>As of 7/30/2023, I completed the 3rd class in the Annoyance Program and we had our class end performance! <br> 
+                    If you are interested in how we did, you can view the video here!  (video coming soon) </p>
+            </article>
+        </section>
+    </main>
+    <footer id="footer">
+        <nav>
+            <ul>
+                <li><a href="https://www.youtube.com/channel/UCpiKfNMF6rYzgObTz4zl-2A" target="_blank">YouTube</a></li>
+                <li><a href="https://www.linkedin.com/in/matthew-lagreca-a178a2ab/" target="_blank">LinkedIn</a></li>
+            </ul>
+        </nav>
+        <form action="">
+            <!-- for *THING* should math input name=*THING* -->
+            <p><b>For Business Inquiries:</b></p><br>
+            <label for="name">Your Name</label>
+            <input type="text" name ="name" autocomplete="given-name">
+            
+            <label for="email">Your Email</label>
+            <input type="email" name="email">
+
+            <label for="reference">How did you find out about me?</label>
+            <select name="reference" id="reference">
+                <option value="google">Google</option>
+                <option value="linkedin">LinkedIn</option>
+                <option value="tiktok">TikTok</option>
+            </select>
+
+            <label for="message">Say Hello</label>
+            <textarea name="message" id="" cols="30" rows="10"></textarea>
+            <button type="submit">Submit</button>
+        </form>
+        
+    </footer>
+    <div>&copy &nbsp; Matthew LaGreca 2023</div>
+<body>
+
+</body>
+
+</html>
+<!-- Semantic vs non-semantic elements
+
+Non-semantic: older that still work (late 90s to early 2000s), but we have better options (sometimes)
+Semantic: the tag carries meaning in what the content is (best practices)
+
+Non-semantic:
+div - most basic BLOCK level element
+span - most basic INLINE element 
+img - images
+a - anchor tags or links
+form - how we send info to databases/back-end
+label - for an input to say what it is
+input - taking in user input
+button - things to click to make things happen
+h1 - h6 - headings
+p - paragraphs
+ul, ol - lists
+li - list items
+tables - aren't super useful anymore but we still use them
+
+Semantic:
+header - indicates the top of the page/section
+main - primary content on the page
+aside - less important content on the page
+footer - bottom of the page/section (usually contact info)
+section - a block of content within our main tag
+articles - standalone content
+nav - for groups of links/navigation elements
+
+==> these are all just divs with different names
+-->
